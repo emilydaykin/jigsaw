@@ -126,7 +126,9 @@ function dragEnd(e) {
     dragEndCalled++;
   }
   console.log('imagesInPile', imagesInPile);
-  displayFinalImage();
+  if (imagesInPile === 0) {
+    displayFinalImage();
+  }
 }
 
 function dragOver(e) {
