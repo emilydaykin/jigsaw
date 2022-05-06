@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+body {
+  background-image: linear-gradient(90deg, #e74b83, #dd3ddb);
+  font-family: 'Lexend', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  height: 100%;  /* need to have this with overflow-y! */
+}
+
+.image-parts {
+  /* display: grid;
+  grid-template-columns: repeat(6, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 760px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.jigsaw-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  border: 3px solid #fff;
+  height: 150px;
+  width: 150px;
+  margin: 2px;
+}
+
+.hovered {
+  background-color: rgba(195, 188, 188, 0.84);
+  border-style: dashed;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  cursor: grab;
+  margin: 5px;
+  color: #716f6f;
+}
+
+.jigsaw {
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  cursor: grab;
+}
+
+.one {
+  background-image: url('unsplash_split/1.jpg');
+  background-size: contain;
+}
+.two {
+  background-image: url('unsplash_split/11.jpg');
+  background-size: contain;
+}
+.three {
+  background-image: url('unsplash_split/3.jpg');
+  background-size: contain;
+}
+.four {
+  background-image: url('unsplash_split/8.jpg');
+  background-size: contain;
+}
+.five {
+  background-image: url('unsplash_split/9.jpg');
+  background-size: contain;
+}
+.six {
+  background-image: url('unsplash_split/6.jpg');
+  background-size: contain;
+}
+.seven {
+  background-image: url('unsplash_split/7.jpg');
+  background-size: contain;
+}
+.eight {
+  background-image: url('unsplash_split/4.jpg');
+  background-size: contain;
+}
+.nine {
+  background-image: url('unsplash_split/5.jpg');
+  background-size: contain;
+}
+.ten {
+  background-image: url('unsplash_split/10.jpg');
+  background-size: contain;
+}
+.eleven {
+  background-image: url('unsplash_split/2.jpg');
+  background-size: contain;
+}
+.twelve {
+  background-image: url('unsplash_split/12.jpg');
+  background-size: contain;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  border: none;
+  margin: 30px 10px;
+}
+
+.hide { /* hide hint */
+  opacity: 0;
+  /* color: #716f6f; */
+}
+
+.hintBtn, .restart {
+  font-family: inherit;
+  font-size: 20px;  /* the font sets the size (height/width) of the button */
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 20px; /* needed twice here and in parent div */
+  background: -webkit-linear-gradient(right, #e74b83, #dd3ddb);  /* #e74b83, #dd3ddb */
+  -webkit-background-clip: text;  /* gets rid of background */
+  -webkit-text-fill-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.restart{
+  font-weight: normal;
+}
+
+.hintBtn:active, .restart:active {
+  transform: scale(1.2);
+}
+/* .btn:focus{
+  outline: none;
+} */
